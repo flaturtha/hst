@@ -1,0 +1,26 @@
+.top-teaser {
+  margin: 0 auto;
+  padding: 2rem;
+  height: 400px;
+  background: url("/assets/img/WDI.jpg");
+  text-align: center;
+  @include bleed (0 100%);
+}
+
+.top-teaser__inner {
+  background-color: rgba(255,255,255,0.9);
+  color: forestgreen;
+  padding: 2rem;
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: #000;
+  }
+}
+
+.yellowbox {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 0.25rem;
+}

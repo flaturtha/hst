@@ -1,0 +1,32 @@
+/* ==========================================================================
+   HEADER .. full width of browser window
+   ========================================================================== */
+
+.site__header {
+	background: forestgreen /* url("/assets/img/bugs.png") no-repeat */;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header {
+  @include full;
+  .branding {
+    @include cf;
+    padding-top: 1rem
+  }
+  .logo {
+    @include span(3 of 8);
+    @include breakpoint($tablet) {
+      @include span(4 of 16);
+    }
+  }
+  .subtitle {
+    @include span(4 of 8);
+    padding-top: 1.65rem;
+    @include breakpoint($tablet) {
+      @include span(10 of 16);
+      font-size: 3rem;
+      padding-top: 4rem;
+    }
+  }
+}

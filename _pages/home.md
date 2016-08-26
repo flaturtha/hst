@@ -4,7 +4,7 @@ permalink: /
 title: Home
 ---
 
-<div class="wrap {{ page.title }}">
+<div class="{{ page.title }}">
 
   {% include hero.html %}
   {% include whatwedo.html %}

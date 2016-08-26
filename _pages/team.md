@@ -4,7 +4,7 @@ permalink: /team/
 title: Team
 ---
 
-<div class="{{ page.title }}">
+<div class="wrap {{ page.title }}">
 
   <h1>Team</h1>
 

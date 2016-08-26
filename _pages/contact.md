@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact
 ---
 
-<div class="{{ page.title }}">
+<div class="wrap {{ page.title }}">
 
   <h1>Contact</h1>
 

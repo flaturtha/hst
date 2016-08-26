@@ -19,6 +19,16 @@ gulp.task('jekyll-build', function (done) {
 });
 
 /**
+* Copy
+*/
+
+gulp.task('copyimg', function () {
+  gulp.src('_assets/img/**/*.*')
+    .pipe(gulp.dest('assets/img'));
+});
+
+
+/**
  * Rebuild Jekyll & do page reload
  */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
@@ -28,7 +38,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'copyimg', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'

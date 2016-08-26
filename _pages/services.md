@@ -4,7 +4,7 @@ permalink: /services/
 title: Services
 ---
 
-<div class="{{ page.title }}">
+<div class="wrap {{ page.title }}">
 
   <h1>Services</h1>
 

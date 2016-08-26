@@ -1,0 +1,76 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+}
+
+// replace with Neat grid
+.wrap {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.copyright {
+  float: right;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.ghost {
+  color: $ghost;
+}
+
+.full-width {
+  width: 100%;
+}
+
+
+.no-border {
+  border: none;
+}
+
+.narrow {
+  width: 300px;
+}
