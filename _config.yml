@@ -1,0 +1,27 @@
+# Site settings
+title: Home Safe
+subtitle: Termite & Pest Company
+email: inspector@inspectingdfwhomes.com
+phone: (469) 931-4711
+description: HOME SAFE TERMITE & PEST COMPANY is an affiliate and partner of Parperty Condition Consulting, LLC., and is based in Rowlett, TX. We proudly serve the residents of the Dallas and surrounding counties.
+baseurl: "localhost:3000" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site ... change to "/NOS" for gh-pages
+twitter_username:
+github_username:
+locale: en_US
+
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: ["_pages"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# gems: [jekyll-assets, autoprefixer-rails]

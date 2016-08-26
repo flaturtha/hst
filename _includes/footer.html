@@ -1,0 +1,27 @@
+<footer class="site-footer">
+
+<nav class="nav__footer">
+    <h2 class="hidden">Footer Navigation</h2>
+    <ul>
+      <li><a {% if page.url == '/' %} class="active" {% endif %} href="/">Home</a></li>
+      <li><a {% if page.url == '/services/' %} class="active" {% endif %} href="/services/">Services</a></li>
+      <li><a {% if page.url == '/team/' %} class="active" {% endif %} href="/team">Team</a></li>
+      <li><a {% if page.url == '/resources/' %} class="active" {% endif %} href="/resources/">Resources</a></li>
+      <li><a {% if page.url == '/contact/' %} class="active" {% endif %} href="/contact/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="description">
+    <p>{{ site.description }}</p>
+  </section>
+
+  <section class="location">
+    <img src="http://placehold.it/350x150" alt="" class="map">
+    <ul>
+      <li>Phone: {{ site.phone }}</li>
+      <li>Email: {{ site.email }}</li>
+    </ul>
+  </section>
+
+
+</footer>
